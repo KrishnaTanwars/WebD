@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+        }
+
+        .red{
+            background-color: green;
+        }
+
+        #1{
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+
+        div > p{
+            background-color: black;
+            color: blue;
+        }
+
+
+        /* Descendant Selecotr */
+
+        div p{
+            background-color: yellowgreen ;
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color:yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: black;
+        }
+
+        a:hover{
+            background-color: orange;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="red" id="1"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, vero!</p></div>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <div>
+        <article>
+            <span>
+                <p>Lorem ipsum dolor sit amet.
+                Autem tempore reprehenderit quasi unde!</p>
+            </span>
+        </article>
+    </div>
+
+    <div class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </div>
+
+
+    <a href="https://www.google.com/">Go to Google</a>
+</body>
+</html>
