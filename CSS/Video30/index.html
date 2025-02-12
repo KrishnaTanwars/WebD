@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+
+<style>
+
+    :root{
+        --color:blue;
+        --seccolor:lightblue;
+        --defpad:20px;
+        --defop:0.5;
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        background-color: var(--color);
+    }
+
+    ul{
+        display: flex;
+    }
+
+    ul li{
+        list-style: none;
+        padding: var(--defpad);
+        border: 2px solid var(--seccolor);
+        opacity: var(--defop);
+    }
+
+    .container{
+        background-color: var(--seccolor);
+    }
+
+    ul li:first-child{
+        /* --color:yellow; */
+
+        background-color: var(--color,yellow);
+
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptas fuga quibusdam qui quam similique? Non eaque quae sed dolore! Voluptatum ducimus sed quasi, officiis ad, et pariatur iure illo expedita culpa autem eveniet. Cumque earum atque molestiae quos quod. Quam ex sunt ab fuga.
+
+    </div>
+</body>
+</html>
