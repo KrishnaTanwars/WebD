@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit & Object Cover</title>
+    <style>
+        .container{
+            height: 663px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: azure;
+            background-position: center center;
+            background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/fa/1b/lost-valley.jpg?w=900&h=500&s=1");
+            background-repeat: no-repeat;
+        }
+
+        img{
+            width: 455px;
+            height: 555px;
+            object-fit: cover;
+            /* object-fit: scale-down; */
+            object-position: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/fa/1b/lost-valley.jpg?w=900&h=500&s=1" alt=""> -->
+    </div>
+</body>
+</html>
