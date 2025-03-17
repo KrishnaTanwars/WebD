@@ -82,7 +82,48 @@ nav button {
     font-size: 20px;
 }
 
-.separation{
+.separation {
     height: 7px;
-    background-color: rgb(72, 71, 71) ;
+    background-color: rgb(72, 71, 71);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 500;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-size: 17px 101px 8px 14;
+    border-radius: 4px;
+    color:white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(23, 23, 23, 0.7);
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
